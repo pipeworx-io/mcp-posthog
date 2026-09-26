@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-posthog",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PostHog MCP — wraps PostHog Analytics API (app.posthog.com/api)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-773303bb38b865dfea5914dea8534c3ac05f7f03033f4cbc9030542ed8101ee4",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-f1d04196efb07125dcb5f4ca707dec3117d872e14f6ef667e197680b3b4ead96",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
