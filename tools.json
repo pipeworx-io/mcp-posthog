@@ -1,0 +1,73 @@
+[
+  {
+    "name": "get_events",
+    "description": "Fetch recent events from a PostHog project. Returns event names, timestamps, and properties. Example: get_events({ project_id: \"12345\", limit: 50, _apiKey: \"phx_...\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "description": "PostHog project ID (numeric string)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max events to return (default 100, max 1000)"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "PostHog personal API key (phx_...)"
+        }
+      },
+      "required": [
+        "project_id",
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "get_persons",
+    "description": "Search for persons (users) in a PostHog project. Returns user profiles with properties. Example: get_persons({ project_id: \"12345\", search: \"john@example.com\", _apiKey: \"phx_...\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "description": "PostHog project ID (numeric string)"
+        },
+        "search": {
+          "type": "string",
+          "description": "Optional search query to filter persons by email, name, or distinct ID"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "PostHog personal API key (phx_...)"
+        }
+      },
+      "required": [
+        "project_id",
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "get_insights",
+    "description": "List saved insights (charts, trends, funnels) for a PostHog project. Returns insight names, types, and configurations. Example: get_insights({ project_id: \"12345\", _apiKey: \"phx_...\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "description": "PostHog project ID (numeric string)"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "PostHog personal API key (phx_...)"
+        }
+      },
+      "required": [
+        "project_id",
+        "_apiKey"
+      ]
+    }
+  }
+]
