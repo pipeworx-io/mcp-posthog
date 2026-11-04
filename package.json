@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-posthog",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PostHog MCP — wraps PostHog Analytics API (app.posthog.com/api)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "posthog",
     "gatewaySlug": "posthog",
-    "sourceHash": "v1-714a1be7e278a5d1eb15a7eed2433a610ea21d9538803607bb9fe926dbdd3cc6",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-56d80c3fa2611f5f7f9979370dcb2964ae15478e78f700ae54f59f753655c972",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
